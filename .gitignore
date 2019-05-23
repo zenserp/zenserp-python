@@ -30,6 +30,9 @@ wheels/
 *.manifest
 *.spec
 
+examples/token.json
+examples/apikey
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
