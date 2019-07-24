@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md')) as f:
 
 setup(
     name='zenserp',
-    version='0.1.1',
+    version='0.2',
     packages=['zenserp'],
     url='https://github.com/zenserp/zenserp-python',
     license='MIT',

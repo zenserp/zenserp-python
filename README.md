@@ -1,6 +1,6 @@
 # Zenserp Python Client #
 
-Zenserp Python Client is the official Python Wrapper around the zenserp [API](https://docs.zenserp.com).
+Zenserp Python Client is the official Python Wrapper around the zenserp [API](https://zenserp.docs.apiary.io/).
 
 ## Installation
 
@@ -42,7 +42,6 @@ params = (
     ('q', 'Pied Piper'),
     ('location', 'United States'),
     ('search_engine', 'google.com'),
-    ('language', 'English'),
 )
 
 result = client.search(params)

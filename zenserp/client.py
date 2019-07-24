@@ -15,7 +15,7 @@ class Client(object):
 
     def __init__(self, api_key=None, business_id=None):
 
-        self.headers['User-Agent'] = 'Zenserp_Python'
+        self.headers['User-Agent'] = 'Zenserp_Python_V2'
 
         if api_key:
             self.api_key = api_key
@@ -36,9 +36,13 @@ class Client(object):
         Parameter | Description | Default
         --------- | ----------- | -----------
         q | The keyword to query | None (required)
-        location | The location used in the query | United States
-        language | The language of the search engine | English
+        location | The location used in the query | Optional
         search_engine | The url of the search engine to query | google.com
+        hl | The language of the search engine, autodetected from the search_engine if not supplied | Optional
+        gl | Geolocation to be used in the search query, autodetected from the search_engine if not supplied | Optional
+        num | The number of search results. Values can be 1-100 | 10
+        start | Offset for the search results | 0
+        tbm | For image search: 'isch', for Maps 'lcl' | Optional
         timeframe | See below | Optional
 
         Possible values for timeframe:
