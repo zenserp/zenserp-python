@@ -54,10 +54,22 @@ class Client(object):
         mn – the past n number of months. Double digits are supported
         y – past year
         """
-        if type(params) is not tuple:
-            raise Exception("Params need to be pair of tuples")
+        if type(params) is not dict:
+            raise Exception("Params need to be dict")
 
         return self._request('/search', params=params)
+    
+    def search_engines(self):
+        return self._request('/search_engines')
+    
+    def locations(self):
+        return self._request('/locations')
+
+    def gl(self):
+        return self._request('/gl')
+
+    def hl(self):
+        return self._request('/hl')
 
     def _request(self, url, method="GET", params=dict(), data=None,
                  return_type=None):
